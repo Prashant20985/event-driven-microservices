@@ -1,0 +1,15 @@
+spring:
+  h2:
+    console:
+      enabled: 'true'
+  datasource:
+    username: sap
+    url: jdbc:h2:file:~/data/productDB
+    driverClassName: org.h2.Driver
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8081
